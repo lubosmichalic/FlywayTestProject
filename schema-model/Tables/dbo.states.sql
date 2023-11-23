@@ -2,7 +2,7 @@ CREATE TABLE [dbo].[states]
 (
 [country_code] [char] (2) NOT NULL,
 [state_code] [varchar] (3) NOT NULL,
-[state_name] [varchar] (25) NOT NULL
+[state_name] [varchar] (25) NOT NULL,
 )
 GO
 ALTER TABLE [dbo].[states] ADD CONSTRAINT [PK__states__0C51C004AEBFFFFE] PRIMARY KEY CLUSTERED ([country_code], [state_code])
