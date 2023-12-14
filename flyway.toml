@@ -7,6 +7,9 @@ developmentEnvironment = "development"
 shadowEnvironment = "shadow"
 schemaModel = "./schema-model"
 
+  [flywayDesktop.generate]
+  undoScripts = false
+
 [redgateCompare]
 filterFile = "filter.rgf"
 
@@ -109,6 +112,8 @@ outOfOrder = true
 locations = [ "filesystem:migrations" ]
 validateMigrationNaming = true
 defaultSchema = "dbo"
+baselineVersion = "001_20231212151272"
+baselineOnMigrate = true
 
 [flyway.plugins.clean]
 mode = "all"
